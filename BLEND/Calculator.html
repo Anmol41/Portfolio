@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html><head><title>simple calculator</title>
+<script type="text/javascript">
+function add()
+{
+var a, b,sum;
+a = Number(document.calculator.n1.value);
+b = Number(document.calculator.n2.value);
+sum = a + b;
+document.calculator.result.value=sum;
+}
+function minus()
+{
+var a, b,sub;
+a = Number(document.calculator.n1.value);
+b = Number(document.calculator.n2.value);
+sub = a - b;
+document.calculator.result.value=sub;
+}
+function multiply()
+{
+var a, b,mult;
+a = Number(document.calculator.n1.value);
+b = Number(document.calculator.n2.value);
+mult = a * b;
+document.calculator.result.value=mult;
+}
+function divide()
+{
+var a, b,div;
+a = Number(document.calculator.n1.value);
+b = Number(document.calculator.n2.value);
+div = a / b;
+document.calculator.result.value=div;
+}
+</script>
+</head>
+<body bgcolor="pink">
+<form name="calculator"  method="post">
+<table bgcolor="yellow" border="3">
+<tr><td>num1:</td><td><input type="text" name="n1" size="10"></td></tr>
+<tr><td>num2:</td><td><input type="text" name="n2" size="10"></td></tr>
+<tr><td>result:</td><td><input type="text" name="result" size="10"></td></tr>
+<tr><td><input type="button"  value="sum" onClick="add()">
+<input type="button"  value="-" onClick="minus()"></td>
+<td><input type="button"  value="*" onClick="multiply()">
+<input type="button"  value="/" onClick="divide()"></td></tr>
+
+
+</form>
+</body>
+</html>

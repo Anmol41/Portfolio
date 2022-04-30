@@ -1,0 +1,29 @@
+<html><head><title>check age</title>
+
+<script>
+function check()
+{ var age;
+age=Number(document.age.n1.value);
+if(age>0)
+{  
+//document.write("age is correct"); 
+document.age.result.value="age correct"; 
+}  
+else{  
+//document.write("age is incorrect"); 
+document.age.result.value="age is incorrect"; 
+}  
+}
+</script>
+</head>
+<body bgcolor="pink">
+<h1> check age</h1>
+<form name="age"  method="post">
+<table bgcolor="yellow" border="3">
+<tr><td>Enter Age:</td><td><input type="text" name="n1" size="10"></td></tr>
+<tr><td>result:</td><td><input type="text" name="result" size="70"></td></tr>
+<tr><td></td><td><input type="button"  value="check age" onClick="check()"></td></tr>
+</table>
+</form>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<html><head><title>simple calculator</title>
+<style>
+body
+{background-color:pink;
+color:green;
+
+}
+h1
+{
+background-color:yellow;
+color:red;
+font-size:20pt;
+font-family:arial;
+}
+</style>
+<script>
+function calculator()
+{ var num1,num2,num3,largest;
+num1= Number(document.formcalc.n1.value);
+num2 = Number(document.formcalc.n2.value);
+num3 = Number(document.formcalc.n3.value);
+if(num1> num2 && num1> num3)
+{
+largest=num1;
+document.ABC.result.value=largest;
+}
+else if(num2> num1 && num2> num3)
+{
+largest=num2;
+document.ABC.result.value=largest;
+}
+else
+{
+largest=num3;
+document.ABC.result.value=largest;
+}
+}
+
+</script>
+</head>
+<body>
+<h1> show largest value</h1>
+<form name="ABC"  method="post">
+<table bgcolor="yellow" border="3">
+<tr><td>num1:</td><td><input type="text" name="n1" size="10"></td></tr>
+<tr><td>num2:</td><td><input type="text" name="n2" size="10"></td></tr>
+<tr><td>num3:</td><td><input type="text" name="n3" size="10"></td></tr>
+<tr><td>result:</td><td><input type="text" name="result" size="10"></td></tr>
+<tr><td><input type="button"  value="largest" onClick="calculator()"></td><td><input type="reset"  value="clear" /></td></tr>
+
+</table>
+</form>
+</body>
+</html>
